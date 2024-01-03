@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Montserrat:wght@300&family=Noto+Sans:wght@600;800&family=Open+Sans:wght@500&display=swap');
+
+.right{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.left{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.center{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.header{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    background-color:#111111;
+    width: 100%;
+}
+
+.logo{
+    height: 7vh;
+    width: auto;
+    margin-left: 3vw;
+    margin-bottom: 0.1vh;
+}
+
+.textlogo{
+    margin-left: 5vw;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #f1f1f1bb;
+    text-shadow:
+        0 0 1px #F1F1F1,
+        0 0 2px #f1f1f1bb,
+        0 0 5px #f1f1f1bb,
+        0 0 10px #50D7AF,
+        0 0 15px #50D7AF,
+        0 0 21px #50D7AF,
+        0 0 25px #50D7AF,
+        0 0 30px #50D7AF;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    animation: pulsate 2s infinite alternate;
+}
+
+@keyframes pulsate {
+    100% {
+      /* Larger blur radius */
+    text-shadow:
+        0 0 1px #F1F1F1,
+        0 0 3px #f1f1f1bb,
+        0 0 7px #f1f1f1bb,
+        0 0 15px #50D7AF,
+        0 0 20px #50D7AF,
+        0 0 30px #50D7AF,
+        0 0 35px #50D7AF,
+        0 0 40px #50D7AF;
+    }
+    0% {
+      /* A slightly smaller blur radius */
+    text-shadow:
+        0 0 1px #F1F1F1,
+        0 0 3px #f1f1f1bb,
+        0 0 5px #f1f1f1bb,
+        0 0 10px #50D7AF,
+        0 0 17px #50D7AF,
+        0 0 20px #50D7AF,
+        0 0 24px #50D7AF,
+        0 0 29px #50D7AF;
+    }
+}
+
+.navigation{
+    text-align: center;
+    font-size: 1vw;
+    color: #F1F1F1;
+    font-family: 'Gugi', sans-serif;
+    font-weight: 200;
+}
+
+.button {
+    padding: 0.5em 1em;
+    margin-left: 0.5vw;
+    font-family: 'Gugi', sans-serif;
+    font-size: 1vw;
+    border: none;
+    outline: none;
+    color: #F1F1F1;
+    background: #111111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 0.5vh;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:before {
+    content: "";
+    background: linear-gradient(
+    45deg,
+    #78CDCD,
+    #71D0C9,
+    #5BD1B7,
+    #50D7AF,
+    #4BD8AD,
+    #45DCA9,
+    #40DDA6,
+    #3DDFA4,
+    #31F2AC
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.button:hover {
+    
+    transform: translate3d(0, 2px, 0);
+}
+
+.line{
+    display:block;
+    border:none;
+    color:#111111;
+    height: 0.1px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 600, from(#f1f1f1a1), to(#111111));
+}
