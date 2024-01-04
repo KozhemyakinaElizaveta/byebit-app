@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Montserrat:wght@300&family=Noto+Sans:wght@600;800&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Montserrat:wght@300&family=Noto+Sans:wght@800;900&family=Open+Sans:wght@500&family=Tektur:wght@500&display=swap');
+
 
 .right{
     display: flex;
@@ -52,7 +53,7 @@
         0 0 21px #50D7AF,
         0 0 25px #50D7AF,
         0 0 30px #50D7AF;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Tektur', sans-serif;
     font-weight: 600;
     animation: pulsate 2s infinite alternate;
 }
@@ -84,18 +85,10 @@
     }
 }
 
-.navigation{
-    text-align: center;
-    font-size: 1vw;
-    color: #F1F1F1;
-    font-family: 'Gugi', sans-serif;
-    font-weight: 200;
-}
-
 .button {
     padding: 0.5em 1em;
     margin-left: 0.5vw;
-    font-family: 'Gugi', sans-serif;
+    font-family: 'Tektur', sans-serif;
     font-size: 1vw;
     border: none;
     outline: none;
@@ -163,7 +156,6 @@
 }
 
 .button:hover {
-    
     transform: translate3d(0, 2px, 0);
 }
 
@@ -174,3 +166,48 @@
     height: 0.1px;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 600, from(#f1f1f1a1), to(#111111));
 }
+
+.navigation{
+    text-align: center;
+    font-size: 1vw;
+    color: #F1F1F1;
+    font-family: 'Tektur', sans-serif;
+    font-weight: 200;
+}
+
+a:hover {
+    color: #f1f1f1bb;
+    text-shadow:
+        0 0 1px #F1F1F1,
+        0 0 2px #f1f1f1bb,
+        0 0 5px #f1f1f1bb,
+        0 0 10px #50D7AF,
+        0 0 15px #50D7AF,
+        0 0 21px #50D7AF,
+        0 0 25px #50D7AF,
+        0 0 30px #50D7AF;
+}
+
+a:active {
+    transform: translate3d(0, 2px, 0);
+}
+
+a{
+    text-decoration: none;
+}
+
+.link_active {
+    color: #f1f1f1bb;
+    text-shadow:
+        0 0 1px #F1F1F1,
+        0 0 2px #f1f1f1bb,
+        0 0 5px #f1f1f1bb,
+        0 0 10px #50D7AF,
+        0 0 15px #50D7AF,
+        0 0 21px #50D7AF,
+        0 0 25px #50D7AF,
+        0 0 30px #50D7AF;
+}
+
+
+

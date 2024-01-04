@@ -2,6 +2,8 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import {HomePage} from './HomePage';
 import {SellPage} from './SellPage';
 import {BuyPage} from './BuyPage';
+import { RegistrationPage } from "./RegistrationPage";
+import { LogInPage } from "./LogInPage";
 
 
 export default function RoutesContainer() {
@@ -14,8 +16,8 @@ export default function RoutesContainer() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/buy" element={<BuyPage />} />
                 <Route path="/sell" element={<SellPage />} />
-                {/* <Route path="/registration" element={<RegistrationPage />} />
-                <Route path="/login" element={<LogInPage />} /> */}
+                <Route path="/registration" element={<RegistrationPage />} />
+                <Route path="/login" element={<LogInPage />} />
             </Routes>
         </>
     )
