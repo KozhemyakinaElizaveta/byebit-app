@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+    font-weight: 400;
+    font-size: 5vw;
+    text-shadow: 0px 0px 10px rgba(80,215,175,1);
+    font-family: 'Tektur', sans-serif;
+    color: #F1F1F1;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-top: 5vh;
+}
+
+.agreement {
+    margin-top: 3vh;
+    width: 25vw;
+    font-weight: 100;
+    font-size: 1.8vh;
+    font-family: 'Tektur', sans-serif;
+    color: #f1f1f1c4;
+    text-align: center;
+    cursor: pointer;
+}

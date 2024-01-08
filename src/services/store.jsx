@@ -2,10 +2,11 @@ import { ActionCreator, applyMiddleware, combineReducers, compose } from "redux"
 import { store } from "..";
 import { ThunkAction, ThunkDispatch } from "redux-thunk";
 import { thunk } from "redux-thunk";
+import { searchReducer } from "./reducers";
 
 
 export const rootReducer = combineReducers({
-    
+    searchReducer
 });
 
 

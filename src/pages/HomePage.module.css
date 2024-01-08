@@ -2,3 +2,72 @@
     background-color: #111111;
     height: 300vh;
 }
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Tektur', sans-serif;
+    font-weight: 100;
+    font-size: 1vw;
+    color: #F1F1F1;
+    margin-left: 8.5vw;
+    width: 85%;
+}
+
+.main_text {
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+    font-weight: 400;
+    font-size: 4vw;
+    text-shadow: 0px 0px 10px rgba(80,215,175,1);
+}
+
+.text{
+    width: 65vw;
+    font-size: 1.4vw;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6vh;
+}
+
+.box{
+    height: 40vh;
+    width: 13vw;
+    border-radius: 3vh;
+    /* box-shadow: #4BD8AD 0 0 0 3px, transparent 1px 1px 1px; */
+    box-shadow: 0 0 1vw 0.1vw #4BD8AD;
+    color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    align-items: flex-start;
+}
+
+.box img {
+    height: 10vh;
+    width: auto;
+    margin-top: 2vh;
+}
+
+.title {
+    font-family: 'Tektur', sans-serif;
+    font-weight: 100;
+    font-size: 1.4vw;
+    color: #4BD8AD;
+    margin-top: 2vh;
+}
+
+.info_text {
+    font-family: 'Tektur', sans-serif;
+    font-weight: 100;
+    font-size: 1vw;
+    color: #F1F1F1;
+    margin-top: 2vh;
+}
